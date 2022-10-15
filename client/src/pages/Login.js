@@ -53,7 +53,7 @@ const Login = () => {
     return true;
   };
   useEffect(() => {
-    if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
+    if (localStorage.getItem('user')) {
       navigate("/");
     }
   }, []);
