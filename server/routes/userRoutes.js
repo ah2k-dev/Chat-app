@@ -1,17 +1,17 @@
 const {
   login,
   register,
-  // getAllUsers,
+  getAllUsers,
   setAvatar,
-  // logOut,
+  logOut,
 } = require("../controllers/usersController");
 
 const router = require("express").Router();
 
-  router.post("/login", login);
+router.post("/login", login);
 router.post("/register", register);
-//   router.get("/allusers/:id", getAllUsers);
-  router.post("/setavatar/:id", setAvatar);
-//   router.get("/logout/:id", logOut);
+router.get("/allusers/:id", getAllUsers);
+router.post("/setavatar/:id", setAvatar);
+router.get("/logout/:id", logOut);
 
 module.exports = router;
