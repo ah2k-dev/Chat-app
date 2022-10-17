@@ -40,6 +40,8 @@ const Chat = () => {
   return (
     <>
       <Container>
+
+        {console.log(currentChat)}
         <div className="container">
           <Contacts contacts={contacts} changeChat={handleChatChange} />
           {currentChat === undefined ? (

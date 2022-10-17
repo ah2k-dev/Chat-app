@@ -5,10 +5,7 @@ import React, { useState, useEffect } from "react";
 const Welcome = () => {
   const [userName, setUserName] = useState("");
   useEffect(() => {
-    setUserName(
-      JSON.parse(localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY))
-        .username
-    );
+    setUserName(JSON.parse(localStorage.getItem("user")).username);
   }, []);
   return (
     <Container>
